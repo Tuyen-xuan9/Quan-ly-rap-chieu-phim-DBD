@@ -8,12 +8,18 @@
 
 ## Cấu trúc thư mục
 Quan-ly-rap-chieu-phim-DBD/
-├── static/              # Chứa file CSS, hình ảnh UI
+├── static/   # Chứa file CSS, hình ảnh UI
+
 ├── templates/           # Giao diện HTML 
+
 ├── app.py               # Xử lý Logic Backend
+
 ├── database.py          # Kết nối và thao tác SQLite
+
 ├── schema.sql           # Script khởi tạo cấu trúc DB
+
 ├── cinema.db            # File Database SQLite (tự động tạo)
+
 └── README.md            # Tài liệu hướng dẫn
 
 ## Hướng dẫn chạy
@@ -29,9 +35,3 @@ pip install flask
 python app.py
 ```
 - Truy cập: Mở trình duyệt và nhập địa chỉ *http://127.0.0.1:5000*
-
-```bash
-psql -U postgres -d rap_chieu_phim -f rap_chieu_phim.sql
-```
-
-Hoặc mở file `rap_chieu_phim.sql` trong **pgAdmin** → Query Tool → Execute.
